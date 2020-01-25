@@ -5,7 +5,7 @@
   export default function (latlang1, latlang2) {
 if (latlang1.hasOwnProperty('lat') && latlang1.hasOwnProperty('lng')
 	&& latlang2.hasOwnProperty('lat') && latlang2.hasOwnProperty('lng')) {
-	getDistance(latlang1, latlang2)
+	return getDistance(latlang1, latlang2)
 } else {
     return 'invalid JSON';
    }
@@ -34,5 +34,5 @@ if (latlang1.hasOwnProperty('lat') && latlang1.hasOwnProperty('lng')
    * @param Number
    */
   function convertToKMs(value) {
-    return value / 1000;
+    return (value / 1000).toFixed(2);
   }
