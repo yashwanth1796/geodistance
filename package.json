@@ -1,5 +1,5 @@
 {
-  "name": "@yashwanth1796/geodistance",
+  "name": "geodistance-cal",
   "version": "1.0.0",
   "description": "calculate disatnce between two coordinated",
   "main": "index.js",

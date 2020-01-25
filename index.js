@@ -2,7 +2,7 @@
    * Haversine Formula to get distance
    * @param latitude and longitude
    */
- function checkIfValid(latlang1, latlang2) {
+  export default function (latlang1, latlang2) {
 if (latlang1.hasOwnProperty('lat') && latlang1.hasOwnProperty('lng')
 	&& latlang2.hasOwnProperty('lat') && latlang2.hasOwnProperty('lng')) {
 	getDistance(latlang1, latlang2)
@@ -36,6 +36,3 @@ if (latlang1.hasOwnProperty('lat') && latlang1.hasOwnProperty('lng')
   function convertToKMs(value) {
     return value / 1000;
   }
-
-
-export default checkIfValid;
