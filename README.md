@@ -32,4 +32,4 @@ var latLong2 = {
 lat: '',
 lng: ''
 }
-var calDistance = distance.calculateDistance(latLong1, latLong2)
+var calDistance = distance(latLong1, latLong2)
